@@ -4,7 +4,9 @@ WORKDIR /app
 
 COPY . .
 
-RUN npm i -g
+RUN apt-get update -y 
+
+RUN npm i --force
 
 EXPOSE 4200
 
