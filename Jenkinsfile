@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage('Hello') {
             steps {
-                echo 'pipeline started .'
+                echo 'pipeline started :)'
                 sh 'ls'
             }
         }
