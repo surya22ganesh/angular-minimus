@@ -11,20 +11,14 @@ pipeline {
                 sh 'ls'
             }
         }
-        // stage('git clone'){
-        //     steps {
-        //         sh 'git clone https://github.com/Aakibgithuber/deployment-of-youtube.git'
-        //     }
-        // }
-        // stage('docker build'){
-        //     steps{
-        //         sh ''' 
-        //             cd deployment-of-youtube
-        //             sudo docker build -t surya22ganesh/ytclone .
-        //         '''
+        stage('docker build'){
+            steps{
+                sh ''' 
+                    sudo docker build -t surya22ganesh/angular-weatherapp .
+                '''
 
-        //     }
-        // }
+            }
+        }
     }
 
 }
